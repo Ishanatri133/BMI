@@ -1,0 +1,77 @@
+import 'package:flutter/material.dart';
+
+// class CALCBMI extends StatelessWidget {
+//   const CALCBMI({super.key, required this.BMIVALUE});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return SafeArea(
+//       child: Scaffold(
+//         body: Container(
+//           child: const Center(
+//             child: Column(
+//               mainAxisAlignment: MainAxisAlignment.center,
+//               children: [
+//                 const Text("this is your BMI" , style: TextStyle(color: Colors.red, fontSize: 20),),
+//                 Text(),
+//               ],
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+// class CALCBMI extends StatelessWidget {
+//   final double bmiValue;
+
+//   CALCBMI(this.bmiValue);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text("BMI RESULT"),
+//       ),
+//       body: Center(
+//         child: Text(
+//           "your value is ",
+//           style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+
+class CALCBMI extends StatelessWidget {
+  final double BMIVALUE;
+
+  const CALCBMI({Key? key, required this.BMIVALUE}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        body: Container(
+          child: const Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "This is your BMI",
+                  style: TextStyle(color: Colors.red, fontSize: 20),
+                ),
+                Text(
+                  "this is the value ",
+                  style: TextStyle(color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
